@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PokemonActivity"
+    android:background="@drawable/landscape">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nombrePokemon"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:fontFamily="@font/press_start_2p"
+            app:layout_constraintBottom_toTopOf="@+id/tipoPokemon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tipoPokemon"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:fontFamily="@font/press_start_2p"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/spritePokemon"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tipoPokemon2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:fontFamily="@font/press_start_2p"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/spritePokemon"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/spritePokemon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:contentDescription="PokeImagen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="420dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/infoPokemon"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/press_start_2p"
+            android:textSize="10sp"
+            android:layout_alignParentStart="true"
+            android:padding="8dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/statsPokemon"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/press_start_2p"
+            android:textSize="10sp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/infoPokemon"
+            android:padding="8dp"
+            android:layout_toRightOf="@+id/infoPokemon"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="420dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/frame">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/descriptionPokemon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/press_start_2p"
+                android:textSize="12sp" />
+
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

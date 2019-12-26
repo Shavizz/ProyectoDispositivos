@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">WildLife</string>
+    <string name="title_map">Map</string>
+    <string name="title_feed">Feed</string>
+    <string name="title_search">Search</string>
+    <string name="extras">Extras</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="animal">Total animals spotted in Cardiff: </string>
+    <string name="animal_count">184(Going to link into full database)</string>
+    <string name="animal_in_database">"Types of animals in the database:</string>
+    <string name="animal_in_database_count">209</string>
+    <string name="number_of_birds_string">Birds in the database:</string>
+    <string name="birds">163</string>
+    <string name="number_of_reptiles_string">Reptiles in the database:</string>
+    <string name="reptiles">18</string>
+    <string name="number_of_mammals_string">Mammals in the database:</string>
+    <string name="mammals">27</string>
+    <string name="number_of_invert_string">Invertebrates in the database:</string>
+    <string name="invert">56</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="not_registered">Not Registered?</string>
+    <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="existing_account_login">Login</string>
+    <string name="unknown">Unknown</string>
+    <string name="image_of_animal">image of animal</string>
+    <string name="image_of_an_animal">image of an animal</string>
+    <string name="colours">Colours</string>
+    <string name="no_results">No results</string>
+    <string name="max_length">Max length</string>
+    <string name="min_length">Min length</string>
+    <string name="type">Type</string>
+
+    <string-array name="colours">
+        <item>Black</item>
+        <item>White</item>
+        <item>Grey</item>
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+    </string-array>
+
+    <string-array name="types">
+        <item>Select a type</item>
+        <item>Bird</item>
+        <item>Invertebrate</item>
+    </string-array>
+
+    <string-array name="min_length">
+        <item>Select a minimum size(cm)</item>
+        <item>10</item>
+        <item>20</item>
+        <item>70</item>
+        <item>140</item>
+    </string-array>
+
+    <string-array name="max_length">
+        <item>Select a maximum size(cm)</item>
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>90</item>
+        <item>160</item>
+    </string-array>
+</resources>
